@@ -1,0 +1,42 @@
+.header-contact
+  background: $dark-blue
+
+.header-contact-container
+  display: flex
+  justify-content: flex-end
+
+.contact-links
+  padding: 16px 0 12px 0
+  text-transform: uppercase
+  font-size: 14px
+  font-weight: 700
+
+.contact-item
+  color: $text-color
+  font-family: "Calibri"
+  &::after
+    content: "\007C"
+    margin: 0 22px
+  &:last-child
+    &::after
+      display: none
+  > a[href="#"]
+    @include link($text-color)
+
+.tel
+  color: $yellow
+  margin-left: 14px
+  @include link($yellow)
+
+
+@media (max-width: 1070px)
+  .header-contact
+    order: 1
+
+  .header-contact-container
+    justify-content: center
+
+/* Portrait phones and smaller */
+@media (max-width: 500px)
+  .contact-links
+    font-size: 12px

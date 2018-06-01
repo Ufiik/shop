@@ -1,0 +1,236 @@
+.header-main
+  position: relative
+
+.header-main-container
+  min-height: 103px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.logo-pic
+  max-width: 162px
+  height: 45px
+
+.search
+  position: relative
+  width: 628px
+
+.search-container
+  align-items: center
+  display: flex
+  background: #fff
+  padding: 16px 15px
+
+.select
+  max-width: 206px
+  position: relative
+  padding-right: 15px
+  &::after
+    position: absolute
+    content: "\01C0"
+    color: #8e8e8e
+    right: 0
+    top: 4px
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+  background: #2CA5FA
+
+.select2-container--default .select2-selection--single
+  border: none
+
+.select2-selection__placeholder
+  color: $dark-text !important
+  font-size: 16px
+
+.search-input
+  padding-left: 27px
+  padding-right: 74px
+  width: 375px
+  input
+    color: #8e8e8e
+    width: 100%
+    outline: none
+    border: none
+    font-size: 13px
+
+
+.search-button
+  outline: none
+  cursor: pointer
+  width: 47px
+  height: 100%
+  background: $blue
+  border: none
+  position: absolute
+  right: 0
+  .fa-search
+    font-size: 20px
+    color: #fff
+
+.hvr-bubble-float-left
+  &::before
+    border-color: transparent $blue transparent transparent
+
+.user-icons-item
+  i
+    color: $text-color
+    font-size: 18px
+
+.user-icons
+  display: flex
+
+.user-icons-item
+  text-align: center
+  position: relative
+  margin-right: 20px
+  &::after
+    content: "\01C0"
+    color: #a8a8a8
+    position: absolute
+    top: 45%
+    right: -13%
+    transform: translate(0, -50%)
+  &:last-of-type
+    &::after
+      display: none
+
+.user-icon-b
+  display: block
+
+.user-icon-text
+  text-transform: uppercase
+  font-size: 12px
+  color: $text-color
+  font-weight: 700
+  display: inline-block
+  margin-top: 10px
+
+.drop-down-button
+  background-color: $tomato
+  border-radius: 4px
+  color: $text-color
+  display: flex
+  justify-content: center
+  align-items: center
+  i
+    font-size: 18px
+  &:hover
+    background: #ff8975
+
+.user-icon-shop
+  min-width: 61px
+  height: 38px
+  position: relative
+
+.count-purchase
+  font-size: 15px
+  font-weight: 700
+
+.purchase-list-container
+  opacity: 0
+  width: 0
+  height: 0
+  background: #050
+  position: absolute
+  left: 10px
+  top: 10px
+  z-index: 500
+  border-radius: 4px
+  background: rgba(255,255,255,.8)
+  border-bottom: 3px solid $dark-blue
+  border-left: 3px solid $dark-blue
+
+
+.purchase-list
+  display: flex
+  flex-direction: column
+  align-items: center
+  &:last-child
+    border-bottom: none
+
+.purchase-list-item
+  border-bottom: 1px solid #E0E0E0
+  display: block
+  width: 90%
+  color: $dark-text
+  font-family: "Lato", sans-serif
+  text-transform: uppercase
+  font-size: 15px
+  font-weight: 700
+  position: relative
+  text-align: center
+  &:last-child
+    border-bottom: none
+  &:first-child
+    margin-top: 20px
+  &::before
+    position: absolute
+    content: "\f09d"
+    font-family: "Font Awesome 5 Free"
+    font-weight: 900
+    left: 0
+    top: 21px
+    font-size: 10px
+  .fa-times
+    position: absolute
+    left: 1px
+    top: 4px
+    font-size: 16px
+
+.purchase-item-text
+  display: block
+  padding: 15px 0
+  width: 150px
+  float: right
+
+.active-left-icon
+  transition: all ease 200ms
+  transform: rotate(90deg)
+
+// /* Large desktops and laptops */
+// @media (min-width: 1200px)
+//
+//
+//
+/* Landscape tablets and medium desktops */
+@media (max-width: 1199px)
+  .header-main
+    background: none
+
+  .header-main-container
+    flex-direction: column
+    padding: 20px !important
+    > div
+      margin-top: 20px
+      &:first-child
+        margin-top: 0
+
+    .search
+      width: 80%
+
+
+//
+/* Portrait tablets and small desktops */
+// @media (max-width: 991px)
+
+//
+// /* Landscape phones and portrait tablets */
+// @media (max-width: 767px)
+//
+//
+//
+/* Portrait phones and smaller */
+@media (max-width: 560px)
+  .select2-container
+    max-width: 100px !important
+
+  .search-input
+    padding: 0 55px 0 10px
+
+@media (max-width: 400px)
+  .select2-container
+    max-width: 65px !important
+
+@media (max-width: 320px)
+  .select2-container
+    max-width: 45px !important

@@ -1,0 +1,75 @@
+.header-text-banner
+  background: #fff
+
+.header-text-banner-container
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  padding: 18px 20px 6px 20px !important
+
+.header-text-banner-item
+  font-family: "Lato", sans-serif
+  color: $dark-text
+  letter-spacing: 0.91px
+  line-height: 14.81px
+  font-size: 15px
+  position: relative
+  b
+    text-transform: uppercase
+    display: block
+    font-weight: 700
+  span
+    line-height: 14.81px
+    color: #666666
+    font-size: 13px
+  &::before
+    font-family: "Font Awesome 5 Free"
+    font-weight: 900
+    font-size: 30px
+    color: $blue
+    position: absolute
+    left: -53px
+
+.air
+  &::before
+    content: "\f072"
+    transform: rotate(-35deg)
+
+.clock
+  &::before
+    content: "\f017"
+
+.circ
+  &::before
+    content: "\f1cd"
+
+@media (max-width: 1070px)
+  .header-text-banner
+    order: 2
+
+@media (max-width: 767px)
+  .header-text-banner-container
+    justify-content: space-around
+
+  .header-text-banner-item
+    font-size: 13px
+    span
+      font-size: 10px
+
+  .air, .clock, .circ
+    &::before
+      font-size: 20px
+      left: -25px
+
+
+@media (max-width: 500px)
+  .header-text-banner-container
+    flex-direction: column
+    align-items: center
+
+  .header-text-banner-item
+    margin-top: 18px
+    &:first-child
+      margin-top: 0

@@ -1,0 +1,60 @@
+// compileCompressed: /home/guest/shop/css/main.min.css
+
+
+@import "variables"
+@import "mixins"
+@import "fonts"
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700')
+
+@import "components/header-contact"
+@import "components/header-main"
+@import "components/header-navigation"
+@import "components/header-text-banner"
+@import "components/navigation-button"
+
+@import "components/content-banners"
+
+*
+  box-sizing: border-box
+
+html, body
+  height: 100%
+  background: #e0e0e0
+
+a
+  text-decoration: none
+  color: $text-color
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+input
+  background: transparent
+
+figure
+  margin: 0
+
+//класс контейнер
+.c
+  max-width: 1209px
+  padding: 0 20px
+  margin: 0 auto
+
+.header
+  background-color: $navy-blue
+  display: flex
+  flex-direction: column
+
+.content
+  margin: 26px auto 47px auto
+
+.banners
+  display: flex
+
+.banners
+  justify-content: space-between
+
+.deal, .quick-link
+  background: #fff

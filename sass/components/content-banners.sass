@@ -1,0 +1,85 @@
+.main-banner, .deal
+  min-height: 366px
+
+.main-banner
+  width: 65.6062861869%
+
+.main-banner-pic
+  width: 100%
+  height: 100%
+
+.deal
+  width: 31.4383788255%
+
+.deal-container
+  padding: 16px 38px 27px 23px
+  display: flex
+  align-items: center
+  flex-direction: column
+  > span
+    font-family: Calibri
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
+    // Text style for "end in"
+    letter-spacing: 0.9px
+
+.deal-caption
+  color: $blue
+  font-family: "Calibri"
+  font-size: 40px
+  font-weight: 700
+  text-transform: uppercase
+
+.deal-timer
+  display: block
+  margin-top: 7px
+
+.deal-hours, .deal-minutes, .deal-seconds
+  background: #f0513a
+  border-radius: 1px
+  font-size: 35px
+  font-family: "Calibri"
+  color: #fff
+  display: inline-block
+  padding: 0 3px
+
+.price-discount-container
+  display: flex
+  width: 100%
+  justify-content: space-between
+  align-items: center
+
+.price
+  color: $blue
+  font-family: "Calibri"
+  font-size: 33px
+  font-weight: 400
+
+.discount
+  color: #373737
+  font-family: Calibri
+  font-size: 14px
+
+@media (max-width: 1199px)
+  .banners
+    flex-direction: column
+    align-items: center
+
+  .main-banner, .deal
+    width: 80%
+
+  .main-banner
+    background: none
+    min-height: 10px
+
+  .deal
+    margin-top: 15px
+
+@media (max-width: 430px)
+  .deal
+    > span
+      font-size: 9px
+
+  .deal-caption
+    font-size: 25px

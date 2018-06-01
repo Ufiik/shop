@@ -1,0 +1,90 @@
+.nav
+  border-top: 1px solid #4b5860
+  background: $navy-blue
+  transition: 500ms all ease
+
+.nav-list
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  &:last-child
+    margin-right: 0
+
+.nav-item
+  text-transform: uppercase
+  font-size: 17px
+  color: #fff
+  margin-right: 44px
+
+.nav-drop-down
+  min-width: 201px
+  height: 34px
+  margin-right: 62px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  .fa-angle-down
+    font-size: 24px
+
+.drop-down-text
+  letter-spacing: 0.75px
+  font-size: 15px
+  font-weight: 700
+  margin-right: 15px
+
+.nav-link
+  display: inline-block
+  padding: 16px 0
+
+.hvr-underline-from-center
+  &::before
+    height: 7px
+    background: $blue
+
+
+
+/* Large desktops and laptops */
+// @media (min-width: 1200px)
+//
+//
+//
+// /* Landscape tablets and medium desktops */
+// @media (min-width: 992px) and (max-width: 1199px)
+//
+//
+//
+// /* Portrait tablets and small desktops */
+// @media (min-width: 768px) and (max-width: 991px)
+//
+//
+//
+/* Landscape phones and portrait tablets */
+@media (max-width: 1070px)
+  .nav
+    position: fixed
+    left: -400px
+    width: 400px
+    z-index: 800
+  .nav-list
+    padding: 25px 0
+    flex-direction: column
+    align-items: flex-end
+  .nav-drop-down
+    margin-right: 44px
+  .active-navigation
+    left: 0
+  .nav-drop-down-container
+    order: 4
+    margin-top: 20px
+
+
+
+// /* Portrait phones and smaller */
+// @media (max-width: 480px)
+//
+//
+//
+// /* Iphone 5 */
+// @media (max-width: 320px)

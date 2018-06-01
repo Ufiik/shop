@@ -1,0 +1,30 @@
+@mixin skew-angle ($direction, $width, $heigth, $skew, $bg-color)
+  @if ($direction == "right top")
+    border-top: $heigth solid $bg-color
+    border-left: 0 solid transparent
+    border-right: $skew solid transparent
+    height: 0
+    width: $width
+  @else if ($direction == "left top")
+    border-top: $heigth solid $bg-color
+    border-left: $skew solid transparent
+    border-right: 0 solid transparent
+    height: 0
+    width: $width
+  @else if ($direction == "right bottom")
+    border-bottom: $heigth solid $bg-color
+    border-left: 0 solid transparent
+    border-right: $skew solid transparent
+    height: 0
+    width: $width
+  @else if ($direction == "left bottom")
+    border-bottom: $heigth solid $bg-color
+    border-left: $skew solid transparent
+    border-right: 0 solid transparent
+    height: 0
+    width: $width
+
+@mixin link($color)
+  color: $color
+  &:hover
+    text-decoration: underline
