@@ -1,0 +1,42 @@
+.quick-link
+  margin-top: 20px
+  padding: 20px
+  font-family: "Calibri"
+
+.quick-arrow
+  font-weight: 700
+  margin-right: 35px
+  position: relative
+  &::after
+    position: absolute
+    content: "\f0a9"
+    font-family: "Font Awesome 5 Free"
+    font-weight: 900
+    font-size: 14px
+    color: $blue
+    right: -26px
+
+.quick-link-list
+  display: inline-block
+
+.quick-link-item
+  margin-right: 32px
+  position: relative
+  display: inline-block
+  &::after
+    position: absolute
+    right: -20px
+    content: ":"
+    color: $dark-text
+  &:last-child
+    margin-right: 0
+    &::after
+      display: none
+
+.quick-link-a
+  @include link($dark-text)
+  font-size: 15px
+
+@media (max-width: 1140px)
+  .quick-link-list
+    margin-top: 7px
