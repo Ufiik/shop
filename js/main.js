@@ -78,4 +78,12 @@
     }
   }
 
+  $(".discount-carousel").owlCarousel({
+    mouseDrag: false,
+    margin: 29,
+    nav: true,
+    navText: ["<div class='triangle-left lb'><i class='fas fa-angle-left'></i></div>","<div class='triangle-right rb'><i class='fas fa-angle-right'></i></div>"],
+    dots: false
+  });
+
 }(jQuery));

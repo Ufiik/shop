@@ -1,0 +1,86 @@
+.discount
+  margin-top: 18px
+  font-family: "Calibri"
+
+.discount-carousel
+  .owl-nav
+    position: absolute
+    width: 100%
+    top: 40%
+    transform: translateY(-50%)
+    i
+      position: absolute
+      color: #fff
+      font-size: 37px
+      top: 17px
+    .owl-prev, .owl-next
+      position: absolute
+    .owl-prev
+      left: -34px
+      i
+        left: 13px
+    .owl-next
+      right: -34px
+      i
+        right: 13px
+
+.discount-item
+  position: relative
+
+.discount-text
+  padding: 26px 20px 26px 34px
+  max-width: 255px
+
+.discount-picture
+  position: absolute
+  bottom: 0
+  z-index: -1
+  height: 100%
+  width: 100%
+
+.discount-caption
+  font-size: 35px
+  font-weight: 700
+  letter-spacing: -1.28px
+
+.discount-list-item
+  margin-left: 31px
+  margin-top: 14px
+  max-height: 316px
+  a
+    color: $dark-text
+    font-size: 18px
+    position: relative
+    &:hover
+      &::before
+        left: -10px
+    &::before
+      transition: all ease 300ms
+      position: absolute
+      content: ""
+      display: inline-block
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 4.5px 0 4.5px 5px
+      top: 4px
+      left: -27px
+  &:first-child
+    margin-top: 28px
+
+.blue-caption
+  color: $blue
+
+.dark-caption
+  color: $dark-text
+
+.white-caption
+  color: #fff !important
+
+.small-triangle-white
+  &::before
+    border-color: transparent transparent transparent #fff
+
+.small-triangle-blue
+  &::before
+    border-color: transparent transparent transparent $blue
