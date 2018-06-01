@@ -83,7 +83,20 @@
     margin: 29,
     nav: true,
     navText: ["<div class='triangle-left lb'><i class='fas fa-angle-left'></i></div>","<div class='triangle-right rb'><i class='fas fa-angle-right'></i></div>"],
-    dots: false
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+        stagePadding: 30
+      },
+      760: {
+        items: 2,
+        stagePadding: 30
+      },
+      1150: {
+        items: 3
+      }
+    }
   });
 
 }(jQuery));
