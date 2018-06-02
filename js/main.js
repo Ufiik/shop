@@ -99,4 +99,14 @@
     }
   });
 
+  $(".products-carousel").owlCarousel({
+    items: 5,
+    mouseDrag: false,
+    nav: true,
+    navText: ["<div class='triangle-left lt'><i class='fas fa-angle-left'></i></div>","<div class='triangle-right lr'><i class='fas fa-angle-right'></i></div>"],
+    dots: false,
+    margin: 30,
+    stagePadding: 42
+  });
+
 }(jQuery));

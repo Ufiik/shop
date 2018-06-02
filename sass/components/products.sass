@@ -1,0 +1,86 @@
+.latest-products, .clearance-sale, .vieved-items
+  margin-top: 40px
+  font-family: "Calibri"
+
+.products-carousel
+  border-top: 4px solid $blue
+  padding: 15px 0
+  background: #fff
+
+.product-item-container
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.products-caption
+  font-size: 35px
+  font-weight: 400
+  color: $dark-text
+
+.products-picture-container
+  height: 155px
+  display: flex
+  align-items: center
+
+.product-picture
+  display: block
+
+.product-rating
+  font-size: 11px
+  position: relative
+  margin-top: 6px
+
+.product-rating-bg
+  color: #ececec
+
+.product-rating-current
+  color: #f6b800
+  position: absolute
+  top: 0
+  i
+    &:nth-child(1)
+      &:hover
+        color: #f6b800
+        ~ i
+          color: #ececec
+    &:nth-child(2)
+      &:hover
+        &:nth-child(-n+2)
+          color: #f6b800
+        ~ i
+          color: #ececec
+    &:nth-child(3)
+      &:hover
+        &:nth-child(-n+3)
+          color: #f6b800
+        ~ i
+          color: #ececec
+    &:nth-child(4)
+      &:hover
+        &:nth-child(-n+4)
+          color: #f6b800
+        ~ i
+          color: #ececec
+    &:nth-child(5)
+      &:hover
+        &:nth-child(-n+5)
+          color: #f6b800
+        ~ i
+          color: #ececec
+
+.product-name
+  font-weight: 700
+  color: $dark-text
+  margin-top: 10px
+  text-align: center
+
+.product-discount
+  font-size: 14px
+  margin-top: 1px
+  color: $dark-text
+
+.product-price
+  font-size: 33px
+  color: $blue
+  margin-top: 13px
