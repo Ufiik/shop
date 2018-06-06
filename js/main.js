@@ -106,7 +106,24 @@
     navText: ["<div class='triangle-left lt'><i class='fas fa-angle-left'></i></div>","<div class='triangle-right lr'><i class='fas fa-angle-right'></i></div>"],
     dots: false,
     margin: 30,
-    stagePadding: 42
+    stagePadding: 42,
+    responsive: {
+      0: {
+        items: 1
+      },
+      500: {
+        items: 2
+      },
+      760: {
+        items: 3
+      },
+      1000: {
+        items: 4
+      },
+      1366: {
+        items: 5
+      }
+    }
   });
 
 }(jQuery));

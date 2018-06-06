@@ -1,20 +1,20 @@
-.header-text-banner
-  background: #fff
+.footer-text-banner
+  background: #406884
 
-.header-text-banner-container
+.footer-text-banner-container
   display: -webkit-flex
   display: -ms-flex
   display: flex
   flex-wrap: wrap
   justify-content: space-around
-  padding: 18px 20px 6px 20px !important
+  padding: 38px 20px 30px 20px !important
 
-.header-text-banner-item
+.footer-text-banner-item
   font-family: "Lato", sans-serif
-  color: $dark-text
+  color: #fff
   letter-spacing: 0.91px
-  line-height: 14.81px
-  font-size: 15px
+  line-height: 20.52px
+  font-size: 21px
   position: relative
   b
     text-transform: uppercase
@@ -22,39 +22,28 @@
     font-weight: 700
   span
     line-height: 14.81px
-    color: #666666
-    font-size: 13px
+    color: #fff
+    font-size: 18px
     font-weight: 400
   &::before
     font-family: "Font Awesome 5 Free"
     font-weight: 900
-    font-size: 30px
-    color: $blue
+    font-size: 42px
+    color: #fff
     position: absolute
-    left: -53px
+    left: -60px
 
-.air
-  &::before
-    content: "\f072"
-    transform: rotate(-35deg)
-
-.clock
-  &::before
-    content: "\f017"
-
-.circ
-  &::before
-    content: "\f1cd"
-
-@media (max-width: 1070px)
-  .header-text-banner
-    order: 2
+@media (max-width: 900px)
+  .footer-text-banner-item
+    font-size: 15px
+    span
+      font-size: 12px
 
 @media (max-width: 767px)
-  .header-text-banner-container
+  .footer-text-banner-container
     justify-content: space-around
 
-  .header-text-banner-item
+  .footer-text-banner-item
     font-size: 13px
     span
       font-size: 10px
@@ -66,11 +55,11 @@
 
 
 @media (max-width: 500px)
-  .header-text-banner-container
+  .footer-text-banner-container
     flex-direction: column
     align-items: center
 
-  .header-text-banner-item
+  .footer-text-banner-item
     margin-top: 18px
     &:first-child
       margin-top: 0

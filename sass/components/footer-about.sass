@@ -1,0 +1,144 @@
+.footer-about
+  background: $navy-blue
+  color: #fff
+  padding: 57px 0 67px 0
+
+.footer-about-container
+  display: flex
+  justify-content: space-between
+
+.footer-lists
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+
+.lists-item
+  margin-right: 50px
+  max-width: 168px
+  &:last-child
+    margin-right: 0
+
+.footer-list
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.footer-lists-caption
+  font-size: 20px
+  letter-spacing: 0.2px
+
+.footer-list-item
+  margin-left: 15px
+  margin-top: 14px
+  a
+    font-size: 14px
+    position: relative
+    letter-spacing: 0.14px
+    &:hover
+      &::before
+        left: -10px
+    &::before
+      transition: all ease 300ms
+      position: absolute
+      content: ""
+      display: inline-block
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 4.5px 0 4.5px 5px
+      top: 4px
+      left: -12px
+  &:first-child
+    margin-top: 28px
+
+.social
+  max-width: 313px
+
+.social-news
+  font-size: 14px
+  p
+    margin-top: 24px
+    letter-spacing: 0.14px
+
+.social-news-caption
+  font-size: 20px
+  letter-spacing: 0.2px
+
+.social-input
+  margin-top: 17px
+  position: relative
+  max-width: 87.86%
+  input
+    width: 100%
+    padding: 17px 62px 17px 17px
+    border: 1px outset #cfcfcf
+    color: #fff
+    &::placeholder
+      color: #fff
+      opacity: 1
+    &:-ms-input-placeholder
+      color: #fff
+    &::-ms-input-placeholder
+      color: #fff
+
+  button
+    position: absolute
+    width: 45px
+    height: calc(100% - 2px)
+    background: $blue
+    right: 1px
+    top: 1px
+    i
+      transition: all ease 200ms
+      font-size: 18px
+      color: #fff
+    &:hover
+      cursor: pointer
+      i
+        font-size: 22px
+
+.social-links
+  margin-top: 37px
+
+.social-links-caption
+  font-size: 20px
+
+.social-links-container
+  display: flex
+  align-items: center
+  margin-top: 17px
+
+.social-link
+  font-size: 27px
+  margin-right: 38px
+  i
+    transition: all ease 200ms
+  .fa-facebook-f
+    &:hover
+      color: #415E9B
+  .fa-youtube
+    &:hover
+      color: #f00
+  .fa-twitter
+    &:hover
+      color: #1DA1F2
+  &:last-child
+    margin-right: 0
+
+
+@media (max-width: 1160px)
+  .footer-about-container
+    flex-direction: column
+    align-items: center
+
+  .social
+    order: -1
+
+  .footer-lists
+    flex-wrap: wrap
+
+  .footer-lists-caption
+    display: inline-block
+    margin-top: 40px

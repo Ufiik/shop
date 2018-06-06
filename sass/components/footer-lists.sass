@@ -1,0 +1,32 @@
+.footer-lists
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+
+.footer-lists-caption
+  font-size: 20px
+  letter-spacing: 0.2px
+
+.footer-list-item
+  margin-left: 31px
+  margin-top: 14px
+  max-height: 316px
+  a
+    font-size: 14px
+    position: relative
+    &:hover
+      &::before
+        left: -10px
+    &::before
+      transition: all ease 300ms
+      position: absolute
+      content: ""
+      display: inline-block
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 4.5px 0 4.5px 5px
+      top: 4px
+      left: -27px
+  &:first-child
+    margin-top: 28px
