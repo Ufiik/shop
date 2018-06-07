@@ -1,11 +1,11 @@
 .latest-products, .clearance-sale, .vieved-items
   margin-top: 40px
   font-family: "Calibri"
+  .owl-stage-outer
+    padding: 15px 0
+    background: #fff
+    border-top: 4px solid $blue
 
-.products-carousel
-  border-top: 4px solid $blue
-  padding: 15px 0
-  background: #fff
 
 .product-item-container
   display: flex
@@ -84,3 +84,27 @@
   font-size: 33px
   color: $blue
   margin-top: 13px
+
+  // .owl-stage
+  //   padding-left: 43px !important
+
+@media (max-width: 1149px)
+  .latest-products, .clearance-sale, .vieved-items
+    .owl-stage
+      padding-left: 47px !important
+
+@media (max-width: 1199px)
+  .latest-products, .clearance-sale, .vieved-items
+    .owl-stage-outer
+      margin: 0 29px
+    .owl-stage
+      padding-left: 43px !important
+    .owl-nav
+      .owl-prev
+        left: -5px
+        i
+          left: 13px
+      .owl-next
+        right: -5px
+        i
+          right: 13px

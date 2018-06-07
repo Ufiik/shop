@@ -17,10 +17,20 @@
   color: #fff
   margin-right: 44px
 
+.nav-drop-down-container
+  position: relative
+  margin-right: 62px
+  transition: all ease 200ms
+  &:hover
+    .nav-drop-down-content
+      overflow: visible
+      height: auto
+  *
+    transition: all ease 200ms
+
 .nav-drop-down
   min-width: 201px
   height: 34px
-  margin-right: 62px
   display: -webkit-flex
   display: -ms-flex
   display: flex
@@ -42,6 +52,29 @@
   &::before
     height: 7px
     background: $blue
+
+.nav-drop-down-content
+  position: absolute
+  top: 100%
+  width: 100%
+  background: $navy-blue
+  z-index: 999
+  border-radius: 5px 5px 0 0
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  height: 0
+  overflow: hidden
+  li
+    width: 100%
+  a
+    padding: 10px 0
+    display: block
+    text-align: center
+    @include link(#fff)
 
 
 
@@ -71,13 +104,12 @@
     padding: 25px 0
     flex-direction: column
     align-items: flex-end
-  .nav-drop-down
-    margin-right: 44px
   .active-navigation
     left: 0
   .nav-drop-down-container
     order: 4
     margin-top: 20px
+    margin-right: 44px
 
 
 

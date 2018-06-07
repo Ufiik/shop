@@ -90,10 +90,24 @@
   .discount-carousel
     .owl-nav
       .owl-prev
-        left: -4px
+        left: -5px
         i
           left: 13px
       .owl-next
-        right: -4px
+        right: -5px
         i
           right: 13px
+
+@media (max-width: 428px)
+  .discount-caption
+    font-size: 25px
+  .discount-list-item
+    margin-left: 0
+    a
+      font-size: 12px
+      &::before
+        display: none
+
+@media (max-width: 428px)
+  .discount-caption
+    font-size: 23px

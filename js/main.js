@@ -87,11 +87,11 @@
     responsive: {
       0: {
         items: 1,
-        stagePadding: 30
+        stagePadding: 29
       },
       760: {
         items: 2,
-        stagePadding: 30
+        stagePadding: 29
       },
       1150: {
         items: 3
@@ -105,23 +105,27 @@
     nav: true,
     navText: ["<div class='triangle-left lt'><i class='fas fa-angle-left'></i></div>","<div class='triangle-right lr'><i class='fas fa-angle-right'></i></div>"],
     dots: false,
-    margin: 30,
-    stagePadding: 42,
+    margin: 40,
     responsive: {
       0: {
-        items: 1
+        items: 1,
+        stagePadding: 70
       },
       500: {
-        items: 2
+        items: 2,
+        stagePadding: 70
       },
       760: {
-        items: 3
+        items: 3,
+        stagePadding: 70
       },
       1000: {
-        items: 4
+        items: 4,
+        stagePadding: 70
       },
-      1366: {
-        items: 5
+      1150: {
+        items: 5,
+        stagePadding: 47
       }
     }
   });
